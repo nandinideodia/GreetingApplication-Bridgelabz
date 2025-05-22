@@ -1,8 +1,10 @@
-package com.bridgelabz.greetingsapp;
+package com.bridgelabz.greetingsapp.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.bridgelabz.greetingsapp.service.GreetingService;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,7 +20,8 @@ public class GreetingController {
      * Constructor for GreetingController.
      * Spring automatically injects an instance of GreetingService.
      * @param greetingService The service layer for handling greeting business logic.
-     */
+     */ 
+    
     public GreetingController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }

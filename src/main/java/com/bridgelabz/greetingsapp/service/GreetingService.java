@@ -1,7 +1,10 @@
-package com.bridgelabz.greetingsapp;
+package com.bridgelabz.greetingsapp.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bridgelabz.greetingsapp.DTO.Greeting;
+import com.bridgelabz.greetingsapp.repository.GreetingRepository;
 
 import java.util.List;
 
